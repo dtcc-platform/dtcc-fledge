@@ -1,4 +1,6 @@
-## TODOS: 
+# FLEdge Technical Specifications and Architecture
+
+## TO DO's: 
 
 - Check consistency (All)
 - Change hardware specs to match RPi5
@@ -7,4 +9,3 @@
 - Add George's chapter (GS)
 - Proof read
 
-[Chapter 1 ](d1.3-draft.md)
