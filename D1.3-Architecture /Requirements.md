@@ -6,3 +6,5 @@
 - Add Sara's usecases (GS)
 - Add George's chapter (GS)
 - Proof read
+
+[Chapter 1 ](d1.3-draft.md)
