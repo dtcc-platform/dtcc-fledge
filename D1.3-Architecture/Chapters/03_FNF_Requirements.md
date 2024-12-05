@@ -4,9 +4,9 @@ This section describes the identified functional and non-functional requirements
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-### 3.1 Building Level EMaN (Pilot Site Deployment/EEM)
+###  <!-- CHAPTER_NUMBER -->X.1 Building Level EMaN (Pilot Site Deployment/EEM)
 
-#### 3.1.1 Functional Requirements
+####  <!-- CHAPTER_NUMBER -->X.1.1 Functional Requirements
 
 ##### **Edge Middleware**
 
@@ -164,7 +164,7 @@ This section describes the identified functional and non-functional requirements
 
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-#### 3.1.2 Non-functional Requirements
+####  <!-- CHAPTER_NUMBER -->X.1.2 Non-functional Requirements
 
 ##### **Edge Middleware**
 
@@ -294,7 +294,7 @@ This section describes the identified functional and non-functional requirements
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-#### 3.1.3 Data Requirements 
+####  <!-- CHAPTER_NUMBER -->X.1.3 Data Requirements 
 
 ##### **Prediction Layer**
 
@@ -387,9 +387,9 @@ This section describes the identified functional and non-functional requirements
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-### 3.2 Neighbourhood, District and City Level Energy Management Node 
+###  <!-- CHAPTER_NUMBER -->X.2 Neighbourhood, District and City Level Energy Management Node 
 
-#### 3.2.1 Functional Requirements
+####  <!-- CHAPTER_NUMBER -->X.2.1 Functional Requirements
 
 ##### Middleware
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -454,7 +454,7 @@ This section describes the identified functional and non-functional requirements
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-#### 3.2.2 Non-Functional Requirements
+####  <!-- CHAPTER_NUMBER -->X.2.2 Non-Functional Requirements
 
 ##### Middleware
 TODO
@@ -518,7 +518,7 @@ TODO
 | Description:  | The DSS should utilize the data history to make optimal decisions in case current measurements or calculations are not available. In the extreme case that historical data are not enough (or the communication error lasts for long periods), rule-based controllers should be utilized.  |
 | Rationale:    | It is crucial to ensure the continuous control of lower tier EMaNs, even if some components are not operating, providing the necessary simulations or inputs.  |
 
-#### 3.2.3 Data Requirements
+####  <!-- CHAPTER_NUMBER -->X.2.3 Data Requirements
 
 ##### Prediction & Simulation Layer
 
@@ -588,9 +588,9 @@ TODO
 | Rationale:    | Necessary inputs to take the final control decisions/recommendations  |
 
 
-### 3.3 Operational Platform
+###  <!-- CHAPTER_NUMBER -->X.3 Operational Platform
 
-#### 3.3.1 Functional Requirements
+####  <!-- CHAPTER_NUMBER -->X.3.1 Functional Requirements
 
 #####  Building Level Mobile App & Upper-Level Dashboards
 
@@ -673,7 +673,7 @@ TODO
 | Rationale:    |  |
 
 
-#### 3.3.2 Non-Functional Requirements
+####  <!-- CHAPTER_NUMBER -->X.3.2 Non-Functional Requirements
 
 
 #####  Building Level Mobile App & Upper-Level Dashboards

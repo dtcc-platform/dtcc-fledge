@@ -1,8 +1,8 @@
-## 1. Introduction
+## <!-- CHAPTER_NUMBER -->X. Introduction
 
 This deliverable establishes the comprehensive technical and architectural specifications for the FLEdge system, laying the foundation for developing and implementing an innovative hierarchical edge-based flexibility management ecosystem. The system aims to transform energy management across multiple scales, from individual buildings to entire cities, through advanced edge computing and intelligent decision support capabilities.
 
-### 1.1 Purpose and Scope
+###  <!-- CHAPTER_NUMBER -->X.1 Purpose and Scope
 
 The primary purpose of this document is to provide detailed technical specifications and architectural designs that will guide the development and implementation of the FLEdge solution. These specifications have been carefully crafted to align with the project objectives identified in Deliverable 1.1 and support the specific use cases outlined in Deliverable 1.2. This document serves as the authoritative technical reference for development teams, system integrators, and stakeholders involved in the implementation phases.
 
@@ -20,7 +20,7 @@ Security and privacy requirements that protect sensitive information and ensure 
 
 Deployment and scalability considerations that enable the system to grow and adapt to varying implementation contexts, from single buildings to city-wide deployments. This includes hardware sizing guidelines, network requirements, and performance specifications.
 
-### 1.2 Document Structure
+###  <!-- CHAPTER_NUMBER -->X.2 Document Structure
 
 This document follows a carefully structured approach to present the technical and architectural aspects of the FLEdge system in a logical and accessible manner. The organization of content progresses from high-level concepts to detailed specifications:
 
@@ -40,7 +40,7 @@ Section 7 (Implementation Plan) presents the strategic approach to system develo
 
 Section 8 (Conclusions and Next Steps) summarizes key architectural decisions and outlines the path forward for system implementation.
 
-### 1.3 Relationship to Other Deliverables
+###  <!-- CHAPTER_NUMBER -->X.3 Relationship to Other Deliverables
 
 This technical specification document maintains crucial relationships with other project deliverables, forming part of a coherent development framework:
 
@@ -56,7 +56,7 @@ D3.1-D3.4 (Hierarchical Management Ecosystem) will utilize these specifications 
 
 D4.1 (System Integration and Deployment) will build upon the integration and deployment specifications provided here to ensure successful system implementation in pilot environments.
 
-### 1.4 Methodology
+###  <!-- CHAPTER_NUMBER -->X.4 Methodology
 
 The development of these technical specifications follows a rigorous, systematic approach designed to ensure comprehensive coverage of all system aspects while maintaining practical feasibility:
 

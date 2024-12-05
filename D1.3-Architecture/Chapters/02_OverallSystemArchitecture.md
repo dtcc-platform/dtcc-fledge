@@ -1,5 +1,5 @@
 
-### 2.1 System Overview
+###  <!-- CHAPTER_NUMBER -->X.1 System Overview
 
 The FLEdge system implements a hierarchical architecture for energy flexibility management, operating across multiple scales from individual buildings to entire cities. At its core, the system utilizes edge computing principles to process and manage energy data locally while enabling coordinated optimization across broader geographical scales.
 
@@ -7,7 +7,7 @@ The architecture follows a distributed approach, with key processing capabilitie
 
 This hierarchical structure enables local autonomy while facilitating broader energy optimization goals. Each level in the hierarchy maintains its own decision-making capabilities while participating in coordinated actions through well-defined interfaces and protocols.
 
-### 2.2 Architecture Principles
+###  <!-- CHAPTER_NUMBER -->X.2 Architecture Principles
 
 The FLEdge architecture adheres to several fundamental principles that guide its design and implementation:
 
@@ -26,11 +26,11 @@ Security considerations are integrated at every level, from device-level encrypt
 #### Scalability and Flexibility
 The architecture supports dynamic scaling, allowing for the addition of new devices and nodes while maintaining system performance and reliability.
 
-### 2.2 Key Components and Interfaces
+###  <!-- CHAPTER_NUMBER -->X.2 Key Components and Interfaces
 
 The FLEdge system comprises several essential components that work together to deliver comprehensive energy flexibility management:
 
-### 2.2.1 FLEDge Building Level EMaN (Pilot Site Deployment/EEM)
+###  <!-- CHAPTER_NUMBER -->X.2.1 FLEDge Building Level EMaN (Pilot Site Deployment/EEM)
 
 Corresponding to the level of building areas, buildings or apartments, the **Building Level EMaN** includes all the necessary components that will autonomously and automatically manage in real-time local control actions and respective information. End User required interaction will be limited, while self-privacy and autonomy of buildings will be ensured through privacy preserving monitoring mechanisms and infrastructures. The Pilot Site Deployment will interact with the building on a continuous and real time basis, based on present building context (comfort and occupancy evidence or prediction, environmental context etc.).  
 
@@ -42,11 +42,11 @@ In order to securely distribute and exchange information and knowledge within FL
 This component consists of the following sub-systems:
 
 
-#### 2.2.1.1 Edge Middleware
+####  <!-- CHAPTER_NUMBER -->X.2.1.1 Edge Middleware
 
 This component bridges the gap between the ICT components and the IoT devices providing all the necessary inputs and communication protocols. It will gather heterogeneous information (e.g. energy consumption, indoor environmental conditions, RES & storage information, etc.) from a variety of sensors/ devices (e.g. building systems, legacy appliances and equipment, etc.).  
 
-#### 2.2.1.2 Prediction Layer  
+####  <!-- CHAPTER_NUMBER -->X.2.1.2 Prediction Layer  
 
  
 
@@ -68,7 +68,7 @@ This module focuses on maximizing the efficient use of locally installed renewab
 
  
 
-#### 2.2.1.3 Decision Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.1.3 Decision Layer 
 
  
 
@@ -78,11 +78,11 @@ The module optimizes building operations by integrating energy efficiency strate
 
  
 
-#### 2.2.1.4 Data and Security Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.1.4 Data and Security Layer 
 
 TODO 
 
-### 2.2.2 Neighbourhood/District/City Level EMaN: 
+###  <!-- CHAPTER_NUMBER -->X.2.2 Neighbourhood/District/City Level EMaN: 
 
 EMaN nodes operate at three distinct levels - neighborhood, district, and city - each providing increasingly broader coordination capabilities. These nodes aggregate data from lower levels, implement optimization algorithms appropriate to their scope, and manage demand response strategies. 
 
@@ -93,11 +93,11 @@ FLEdge’s Energy Management Nodes (EMaNs), designed to manage operations at the
 
 Each node is composed of three core components: the Prediction and Simulation Layer, the Decision Layer, and the Middleware Layer, which work together to enable efficient and scalable energy management. 
 
-#### 2.2.2.1 Middleware Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.2.1 Middleware Layer 
 
 TODO 
 
-#### 2.2.2.2 Prediction & Simulation Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.2.2 Prediction & Simulation Layer 
 
  
 
@@ -115,7 +115,7 @@ The primary purpose of this module is to apply demand-response (D/R) strategies 
 
  
 
-#### 2.2.2.3 Decision Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.2.3 Decision Layer 
 
 The Decision Layer is centered around its sole and primary component, the Decision Support System, which serves as the integrative framework for all sub-components within the node. 
 
@@ -127,23 +127,23 @@ The Decision Layer is centered around its sole and primary component, the Decisi
 
  
 
-#### 2.2.2.4 Data and Security Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.2.4 Data and Security Layer 
 
 TODO 
 
-### 2.2.3 Operational Platform:
+###  <!-- CHAPTER_NUMBER -->X.2.3 Operational Platform:
 
 It’s the central component of the FLEdge system architecture providing a secure, scalable, and adaptable framework for data collection, visualization, and user actions. At its core, the platform integrates a centralized data hub, advanced authentication mechanisms, and a multi-tiered visualization layer, offering dashboards and a mobile application for continuousn real-time monitoring and control. By interfacing with distributed Energy Management Nodes (EMaNs) at various levels, the Operational Platform facilitates seamless communication between localized energy systems and centralized functionality. This layer consists of the following sub-systems. 
 
  
 
-#### 2.2.3.1 Authentication Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.3.1 Authentication Layer 
 
 The Authentication Layer employs a token-based authentication mechanism combined with role-based access control to securely manage user interactions with the system. Upon successful authentication through the mobile app or dashboards, users are issued a secure token which encodes their role and permissions. This token is included in subsequent API requests to ensure that users can access data and perform actions appropriate to their assigned roles, such as viewing historical energy data or interacting with digital twin models. To further enhance communication security, the system can incorporate mutual TLS (mTLS), enabling bidirectional authentication between clients and servers to safeguard sensitive energy data and ensure trusted interactions. This combination ensures robust, scalable, and secure access management across the platform. 
 
  
 
-#### 2.2.3.2 Visualization Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.3.2 Visualization Layer 
 
 Includes dashboards for different hierarchical levels—City, District, Neighbourhood, and Building—and a Mobile App interface for accessibility. These dashboards provide insights, visualizations, and tools to monitor and manage energy systems at their respective levels. 
 
@@ -161,7 +161,7 @@ TODO
 
  
 
-#### 2.2.3.3 Data Storage Layer 
+####  <!-- CHAPTER_NUMBER -->X.2.3.3 Data Storage Layer 
 
 The Data Storage Layer serves as a centralized and scalable hub for collecting, storing, and processing data from all nodes within the system. Its architecture aims to support high-throughput data ingestion and secure communication, with a focus on flexibility and modularity. Time-series data, such as energy consumption, generation, elasticity, and occupancy metrics, is efficiently stored in a system optimized for temporal data, while relational data structures manage hierarchical metadata and aggregated summaries.  
 
@@ -173,12 +173,12 @@ To ensure compliance with data protection regulations, the system could employ p
 
 The DSS operates within both EEM devices and EMaN nodes, providing intelligent decision-making capabilities tailored to each level's requirements. It processes real-time data, applies optimization algorithms, and generates control decisions. The DSS interfaces with both local systems and external components through standardized APIs. -->
 
-### 2.2.4 Communication Infrastructure
+###  <!-- CHAPTER_NUMBER -->X.2.4 Communication Infrastructure
 A robust communication infrastructure connects all system components, supporting both real-time data exchange and control signals. It implements multiple protocols to accommodate various device types and communication requirements, while ensuring security and reliability.
 
 
 
-### 2.4 High-Level Architecture Diagram
+###  <!-- CHAPTER_NUMBER -->X.4 High-Level Architecture Diagram
 
 [Note: This section would include a detailed architectural diagram showing the hierarchical structure, component relationships, and key interfaces. The diagram should illustrate the following elements:
 - EEM devices at the building level
@@ -190,7 +190,7 @@ A robust communication infrastructure connects all system components, supporting
 
 
 
-### 2.5 Data Flow Architecture
+###  <!-- CHAPTER_NUMBER -->X.5 Data Flow Architecture
 
 The FLEdge data flow architecture implements a multi-layered approach to information processing and exchange:
 
