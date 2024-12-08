@@ -1,3 +1,12 @@
+<!-- Notes: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- All Hardware specifications should match RPi5 and the rest of hardware that we use 
+
+- Is Section about edge data analytics needed? It's not mentioned anywhere
+
+- Maybe add some hardware specifications for the centralized data storage? 
+f -->
+
 ##  <!-- CHAPTER_NUMBER -->X. Technical Specifications 
 
 ###  <!-- CHAPTER_NUMBER -->X.1 Edge-Energy Management (EEM) Device

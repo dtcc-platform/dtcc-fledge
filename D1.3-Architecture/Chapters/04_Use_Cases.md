@@ -24,7 +24,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case | 1. Registering on the FLEDge platform  | 
 |---------|----------------------------------------|
-| Actor   |   Pilot user/ Building Manager / District Manager   <br>   Social collaboration platform  <br>   Security and Privacy Layer test     |
+| Actor   |   Pilot user/ Building Manager / District Manager   <br>   Operational Platform Application and Dashboards  <br>   Security and Privacy Layer  |
 | Goal    |  Creating an account on the FLEdge platform and providing informed consent  |
 | Brief description |  The user provides a username and a password. User will be provided with a registration key that will match the user with the dwelling data in an anonymous way. A few essential additional questions are asked, as first data for the user profile. Furthermore, the user needs to click on a checkbox with a label that indicates that the user consents with participating in the pilot and understands that the usage of the data for the purposes of the FLEdge research will be pseudonymized. A link is provided to a page where the Terms and Conditions are stated.  |
 | Precondition |  The user has previously provided information and accepted to participate in the FLEdge pilot platform   |
@@ -37,7 +37,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case | 2. Viewing the aggregated consumption and internal conditions in overview visualization  | 
 |---------|----------------------------------------|
-| Actor   |   Pilot user  <br>   Social collaboration platform  <br>   Security and Privacy Layer test     <br>   Middleware     |
+| Actor   |   Pilot user  <br>   Operational Platform Application and Dashboards  <br>   Security and Privacy Layer     <br>   Middleware     |
 | Goal    |  User can access his energy consumption through a visual representation of their aggregated consumption alongside the internal conditions of the dwelling (temperature-humidity-CO2).   |
 | Brief description |  User can inspect his consumption by looking at a general overview consisting of an easy-to-understand summarization of the consumption. Users can select different granularity levels (day, week, month) to inspect. Users can navigate the consumption for different periods by selecting the start and ending date.    |
 | | **Optional**. The overview may contain basic sensor data (e.g., temperature inside and outside). Alternatively, sensor data may be displayed in a detailed view. |
@@ -49,7 +49,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case | 3. Viewing the disaggregated consumption  | 
 |---------|----------------------------------------|
-| Actor   |   Pilot user  <br>   Social collaboration platform  <br>   Security and Privacy Layer test     <br>   Middleware     <br>   Energy Disaggregation and Building Behavior Component |
+| Actor   |   Pilot user  <br>   Operational Platform Application and Dashboards  <br>   Security and Privacy Layer     <br>   Middleware     <br>   Energy Disaggregation and Building Behavior Component |
 | Goal    |  Users can gain insight into the energy consumption per device.    |
 | Brief description |  UDisaggregated consumption information is presented to the user in an easy-to-use informative way (e.g., in the detailed energy consumption visualization). The disaggregation view will display the kW and kWh consumed by the available devices such as: Fridge, Oven, Water heater, Dishwasher, washing machine, Microwave, Kettle, Dryer, Heat pump, AC, EVs. The devices may vary for the different pilots, depending on the availability of the devices and the sensors.     |
 | Precondition |  The user is logged in to the platform and selects the disaggregated energy consumption option. The devices are available and functioning correctly, the consumption information has been collected, transmitted, and stored by the system.    |
@@ -60,7 +60,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case           |  4. Checking the status of an Appliance or a Sensor  | 
 |-------------------|----------------------|
-| Actor             |  Pilot user    <br>  Social collaboration platform   <br>  Security and Data Layer  <br>  Middleware   |
+| Actor             |  Pilot user    <br>  Operational Platform Application and Dashboards   <br>  Security and Data Layer  <br>  Middleware   |
 | Goal              | Users can retrieve and inspect information about the status of an appliance or a sensor in the household.  |
 | Brief description | Users can retrieve and inspect status information about smart appliances and sensors available. The user selects the device they want to inspect from the list of available devices; the platform displays the corresponding status, measurements, and available information in a simple and understandable manner.  |
 | |List of devices that can be identified: Smart plugs/ Electricity meters, Electricity smart meters, Dimming on/off actuators, Occupancy sensors, Environmental sensors, Smart lights, Smart thermostats, Water smart meter, Recirculated water smart meter, Gas smart meter, Demand controlled ventilation, Gateway, Modem, Weather Stations, Indoor Condition Sensors (Temperature, Humidity, CO2) |
@@ -73,9 +73,9 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case           |  5. Calculating and Displaying Optimal HVAC and actuation setpoints.  | 
 |-------------------|----------------------|
-| Actor             |  Pilot user    <br>  Social collaboration platform   <br>  Security and Data Layer  <br>  Digital Twin   <br>  Building Energy Resources Optimization<br>  DSS |
+| Actor             |  Pilot user    <br>  Operational Platform Application and Dashboards   <br>  Security and Data Layer  <br>  Digital Twin   <br>  Building Energy Resources Optimization<br>  DSS |
 | Goal              | The proposed optimal HVAC and actuation (smart plugs) setpoints are calculated and posted.   |
-| Brief description | Social Collaboration Platform receives a notification with an action proposal in order to save energy / improve the comfort level. Suggestion is tailored to their specific context based on sensor data, user profile and user detected behavior. |
+| Brief description | Operational Platform Application receives a notification with an action proposal in order to save energy / improve the comfort level. Suggestion is tailored to their specific context based on sensor data, user profile and user detected behavior. |
 | | The Proactive Building Operation will retrieve sensor information through middleware regarding building conditions (indoor conditions, energy consumption profile). The Digital Twin Tools could be used as a simulation engine, in order to test proposed control strategies from Proactive Building Operation. The final proposed control strategy will be pushed to the DSS. 
 | |An example: the HVAC setpoint should be set to 20 degrees for the next 30 minutes. |
 | Precondition      | Sensors and controllers are available and operating correctly. The sensor and consumption data has been correctly collected, transmitted, and stored by the system and made available for the Proactive Building Operation.   |
@@ -87,7 +87,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case           |  6. Calculating and Displaying Optimal RES and Storage Actions   | 
 |-------------------|----------------------|
-| Actor             | Pilot user    <br>  Social collaboration platform   <br>  Security and Data Layer  <br>  Digital Twin   <br>  Load and Generation Prediction <br>  Building Energy Resources Optimization <br>  DSS |
+| Actor             | Pilot user    <br>  Operational Platform Application and Dashboards   <br>  Security and Data Layer  <br>  Digital Twin   <br>  Load and Generation Prediction <br>  Building Energy Resources Optimization <br>  DSS |
 | Goal              | The proposed optimal RES integration and storage control managements are calculated and posted.    |
 | Brief description | The Building Energy Resources Optimization will retrieve sensor information through middleware regarding building conditions (indoor conditions, energy consumption profile and generation profile). Moreover, it will retrieve predictions from Load & Generation Prediction tool. The Digital Twin Tools platform could be used as a simulation engine, in order to test proposed control strategies and moreover provide the projected and simulated energy tariff (if applicable in the area). The final proposed control strategy will be pushed to the DSS. |
 | | An example: *For the next 30 minutes use the own-produced energy coming from RES to charge the Storage device.*  |
@@ -99,7 +99,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case           |  7. Calculating and Displaying Building Elasticity Information | 
 |-------------------|----------------------|
-| Actor             |  Pilot user / Building manager  <br>  Social collaboration platform  <br>  Middleware  <br>  DBuilding Energy Resources Optimization  <br>  Load & Generation Prediction  <br>   DSS <br>  Building Elasticity & Integrated Proactive Algorithms |
+| Actor             |  Pilot user / Building manager  <br>  Operational Platform Application and Dashboards  <br>  Middleware  <br>  DBuilding Energy Resources Optimization  <br>  Load & Generation Prediction  <br>   DSS <br>  Building Elasticity & Integrated Proactive Algorithms |
 | Goal              | Calculation of building’s elasticity index.  |
 | Brief description |  The Building Elasticity & Integrated Proactive Algorithms tool collects the current energy information of the building from the middleware platform. Moreover, it collects the forecasting energy consumption/production from Load & Generation Prediction tool to calculate the finalized elasticity index of the building for the next timesteps. The value is displayed as a notification message.  |
 | | *An example: for the next 30 minutes the building energy /elasticity/flexibility index will be of that magnitude.* |
@@ -113,7 +113,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 |Use Case           |  8. Calculating and displaying the optimal policy based on multi criterion cost indexes. | 
 |-------------------|----------------------|
-| Actor             |  Pilot user / Building manager  <br>  Social collaboration platform  <br>  Middleware  <br>  Digital Twin Tools  <br>  Load & Generation Prediction  <br>   DSS <br>  Building Elasticity & Integrated Proactive Algorithms |
+| Actor             |  Pilot user / Building manager  <br>  Operational Platform Application and Dashboards  <br>  Middleware  <br>  Digital Twin Tools  <br>  Load & Generation Prediction  <br>   DSS <br>  Building Elasticity & Integrated Proactive Algorithms |
 | Goal              | Calculation of optimal policy for holistic optimization.   |
 | Brief description |  The DSS will collect the proposed control strategies from Proactive Building Operation, Building Energy Resources Optimization and Building Elasticity & Integrated Proactive Algorithms and will implement a multi-criterion optimization policy to achieve the best performance for the building based on multiple cost indexes. The policy description is displayed as a notification message.   |
 | | *An example: for the next 30 minutes the management policy for the HVACs and the Battery will be the following to save energy, integrate the solar production, take advantage of low electricity prices, and improve the energy flexibility index of the building to facilitate grid operations.* |
@@ -129,7 +129,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 | **Field**         | **Details**                                                                                                                                   |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | **Use Case**      | Receiving a notification with an action proposal for manual execution                                                                         |
-| **Actor**         | Pilot user<br>Building manager<br>District manager<br>Social collaboration platform<br>DSS                                                 |
+| **Actor**         | Pilot user<br>Building manager<br>District manager<br>Operational Platform Application and Dashboards<br>DSS                                                 |
 | **Goal**          | User receives a notification with a proposal for a manual execution of an action.                                                            |
 | **Brief Description** | User receives a notification with an action proposal for a manual execution of an action in order to save energy/improve the comfort level. Suggestion is tailored to their specific context based on sensor data, user profile, and user detected behavior. The DSS will push action proposals that will be displayed to the user through a notification widget. Example: Turn off the appliance X to save energy. |
 | **Precondition**  | Sensors and controllers are available and operating correctly. The sensor and consumption data has been correctly collected, transmitted, and stored by the system and made available for the DSS. |
@@ -141,7 +141,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 | **Use Case**    | 10. Accepting or rejecting a notification with an action proposal     |
 |--------------------|----------------------------|
-| **Actor**         | Pilot user<br>Building manager<br>District manager<br>Social collaboration platform<br>DSS                                                 |
+| **Actor**         | Pilot user<br>Building manager<br>District manager<br>Operational Platform Application and Dashboards<br>DSS                                                 |
 | **Goal**          | User receives a notification with a proposal for accepting or rejecting the action.                                                           |
 | **Brief Description** | User receives a notification with a proposal for the execution of an action in order to save energy/improve the comfort level. Suggestion is tailored to their specific context based on sensor data, user profile, and user detected behavior. The user receives an option to accept or reject the action execution. Example: Turn off appliance X to save energy. |
 | **Precondition**  | Sensors and controllers are available and operating correctly. The sensor and consumption data has been correctly collected, transmitted, and stored by the system and made available for the DSS. |
@@ -153,7 +153,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 | **Use Case**      | 11. Changing the execution policy               |
 |--------------------|--------------------------------------------|
-| **Actor**         | Pilot user<br>Building manager<br>District manager<br>Social collaboration platform<br>DSS                                                 |
+| **Actor**         | Pilot user<br>Building manager<br>District manager<br>Operational Platform Application and Dashboards<br>DSS                                                 |
 | **Goal**          | User can change the action execution policy.   |
 | **Brief Description** | The user can change the policy about the execution of actions by giving or removing the permission to the DSS to execute the actions. User has the possibility to apply the change of the permission for a defined period (an hour, a day, a week, or custom). User can decide to change the policy for all the actions of DSS or for a specific module. |
 | **Precondition**  | The DSS has generated a policy for the user.  |
@@ -165,7 +165,7 @@ This section provides a comprehensive examination of the FLEdge platform's opera
 
 | **Use Case**      | 12. Monitoring building load forecasting                            |
 |--------------------|--------------|
-| **Actor**         | Building manager<br>DSS<br>Building Elasticity<br>Load and Generation Prediction<br>Social collaboration platform                          |
+| **Actor**         | Building manager<br>DSS<br>Building Elasticity<br>Load and Generation Prediction<br>Operational Platform Application and Dashboards                          |
 | **Goal**          | The user can monitor the building load forecasting for the next day (or current) through a visual representation.                             |
 | **Brief Description** | The user monitors the building load prediction through a visual representation to learn and understand how and why the system predicts their energy-related behavior like the presented one. Furthermore, the load forecasting information will be utilized by the flexibility (elasticity) engine, which is essential information for its calculation. |
 | **Precondition**  | Proper interfaces with load forecasting will be available to transmit information.                                                            |

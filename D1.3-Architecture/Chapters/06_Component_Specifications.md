@@ -1,3 +1,8 @@
+Notes: 
+
+- There is som repetition between the component specifiaction and technical specifications chapters. Maybe could merge them?
+- 
+
 ##  <!-- CHAPTER_NUMBER -->X. Component Specifications
 
 ###  <!-- CHAPTER_NUMBER -->X.1 Hardware Requirements

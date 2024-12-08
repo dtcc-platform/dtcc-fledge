@@ -161,7 +161,7 @@ A centralized configuration management database (CMDB) maintains records of all 
 
 ####  <!-- CHAPTER_NUMBER -->X.8.1 Monitoring Framework
 
-The monitoring framework provides comprehensive visibility into system operation through multiple layers of monitoring and alerting capabilities. This framework implements:
+The monitoring framework provides comprehensive visibility into system operation through multiple layers of monitoring and alerting capabilities on different EMaN levels. This framework implements:
 
 The monitoring system collects and analyzes data from multiple sources, including:
 - System-level metrics (CPU, memory, disk, network)
@@ -214,9 +214,9 @@ Detailed recovery procedures are documented for various scenarios, including:
 Business continuity management ensures continued operation of critical system functions during disruptive events. The continuity framework includes:
 
 Recovery time objectives (RTO) and recovery point objectives (RPO) are defined for different system components:
-- Critical systems: RTO 4 hours, RPO 5 minutes
-- Important systems: RTO 8 hours, RPO 1 hour
-- Non-critical systems: RTO 24 hours, RPO 4 hours
+- **Critical systems:** RTO 4 hours, RPO 5 minutes
+- **Important systems:** RTO 8 hours, RPO 1 hour
+- **Non-critical systems:** RTO 24 hours, RPO 4 hours
 
 ###  <!-- CHAPTER_NUMBER -->X.10 Documentation Requirements
 

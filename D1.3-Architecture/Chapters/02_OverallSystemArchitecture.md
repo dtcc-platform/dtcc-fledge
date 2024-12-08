@@ -1,4 +1,12 @@
 
+<!-- Notes: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Some things about where security will be implemented were reallly vague. So I couldnt fill things about security layers. I have some things written but didn't know where they fitted. 
+
+- The Data FLow architecture part also defines layers. Could that be confusing since we call some components layers? -->
+
+
+
 ###  <!-- CHAPTER_NUMBER -->X.1 System Overview
 
 The FLEdge system implements a hierarchical architecture for energy flexibility management, operating across multiple scales from individual buildings to entire cities. At its core, the system utilizes edge computing principles to process and manage energy data locally while enabling coordinated optimization across broader geographical scales.
@@ -34,8 +42,7 @@ The FLEdge system comprises several essential components that work together to d
 
 Corresponding to the level of building areas, buildings or apartments, the **Building Level EMaN** includes all the necessary components that will autonomously and automatically manage in real-time local control actions and respective information. End User required interaction will be limited, while self-privacy and autonomy of buildings will be ensured through privacy preserving monitoring mechanisms and infrastructures. The Pilot Site Deployment will interact with the building on a continuous and real time basis, based on present building context (comfort and occupancy evidence or prediction, environmental context etc.).  
 
-The **EEM device** serves as the foundational component of the system, deployed at the building level. It incorporates data collection interfaces for energy meters, sensors, and building management systems. The device features local processing capabilities for real-time analysis and decision-making, including a Decision Support System (DSS) for automated energy optimization. 
-Various mechanisms will be deployed in order to assist with operation control and decisions during its operation.
+The **EEM device** serves as the foundational component of the system, deployed at the building level. It incorporates data collection interfaces for energy meters, sensors, and building management systems. The device features local processing capabilities for real-time analysis and decision-making, including a Decision Support System (DSS) for automated energy optimization. Various mechanisms will be deployed in order to assist with operation control and decisions during its operation.
 Advanced algorithms and their output knowledge (i.e. building flexibility, well-being estimation, RES & storage status, etc.), will allow to analyse and evaluate the building operational status at real-time and make optimal decisions towards smart proactive building behaviour and services.
 In order to securely distribute and exchange information and knowledge within FLEdge framework, External interfaces will be developed and integrated into Building EMaNs for secure end-to-end communications, data protection and privacy-preserving enabling communication with building systems and higher-level EMaN nodes.
 
@@ -60,7 +67,7 @@ The goal of this component is to implement detailed analysis of building energy 
 
 #### Building Energy Flexibility 
 
-This component will deliver advanced building elasticity prediction algorithms allowing the FLEdge framework to perform D/R strategies based on them. Advanced forecasting techniques (i.e. regression approaches, neural networks, etc.) will exploit time series historical energy consumption, generation and storage information from the buildings, the status of the devices/ appliances, the forecasting information (load and generation) and the current status of the building, in order to create various building elasticity (flexibility) models able to estimate/ forecast the elasticity of the building in real-time. 
+This component will deliver advanced building elasticity prediction algorithms allowing the FLEdge framework to perform D/R strategies based on them. Advanced forecasting techniques (i.e. regression approaches, neural networks, etc.) will exploit time series historical energy consumption, generation and storage information from the buildings, the status of the devices / appliances, the forecasting information (load and generation) and the current status of the building, in order to create various building elasticity (flexibility) models able to estimate / forecast the elasticity of the building in real-time. 
 
 #### Building Energy Resources Optimization 
 
@@ -194,16 +201,20 @@ A robust communication infrastructure connects all system components, supporting
 
 The FLEdge data flow architecture implements a multi-layered approach to information processing and exchange:
 
-Data Collection Layer
+#### Data Collection Layer
 At the lowest level, EEM devices collect data from various sources within buildings, including energy meters, environmental sensors, and building management systems. This data undergoes initial processing and validation before being used for local decision-making or forwarded to higher levels.
 
-Local Processing Layer
+#### Local Processing Layer
 EEM devices process collected data locally, implementing real-time analysis and control decisions. This layer includes data aggregation, filtering, and local optimization algorithms that operate independently of higher-level systems.
 
-Aggregation and Coordination Layer
+#### Aggregation and Coordination Layer
 EMaN nodes aggregate data from multiple sources, implementing broader optimization strategies and coordination mechanisms. This layer handles data from multiple EEM devices or lower-level EMaN nodes, generating coordinated control decisions and flexibility management strategies.
 
-Enterprise Integration Layer
+#### Enterprise Integration Layer
 At the highest level, the system integrates with external enterprise systems, providing data for analysis, reporting, and broader energy management initiatives. This layer implements standardized interfaces for data exchange with external systems while maintaining security and access control.
 
 The data flow architecture ensures efficient information movement throughout the system while maintaining data integrity and security. It implements caching mechanisms at appropriate levels to optimize performance and includes redundancy measures to ensure system reliability.
+
+
+
+
