@@ -3,7 +3,7 @@ flowchart LR
         A1(Edge Middleware) 
         A2("Prediction Layer
         (Load & Gen Forecast,
-        NILM, Elasticity)")
+        Disaggregation, Elasticity)")
         A3("Decision Layer
         (DSS)")
         A4(Data & Security Layer)
