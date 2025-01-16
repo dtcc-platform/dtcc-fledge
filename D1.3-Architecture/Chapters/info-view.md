@@ -1,5 +1,3 @@
----
-
 # FLEdge Information View
 
 ## 1. Overview of the FLEdge Information Flow
