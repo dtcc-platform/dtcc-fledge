@@ -15,6 +15,6 @@ flowchart TB
     D1 --> D2
     D2 --> D3
     D3 --> D4
-    D4 -->|Control Signals| D1
+    D4 --> D1
     D4 -->|Aggregated Data| EMA[("Neighborhood /
     District EMaN")]
