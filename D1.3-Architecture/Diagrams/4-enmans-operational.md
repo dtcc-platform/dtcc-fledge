@@ -23,6 +23,6 @@ flowchart LR
     OP3 -- "Historical Data, Analytics" --> OP2
     OP2 -- "Users' Inputs, Preferences" --> OP3
     OP2 --> OP1
-    OP4 -- "Market / Utility Data" --> OP3
+    OP4 -- "Pricing / Utility Data" --> OP3
     OP3 -- "Distilled Data, analytics" --> EMaN3
     EMaN3 --> EMaN2 --> EMaN1
