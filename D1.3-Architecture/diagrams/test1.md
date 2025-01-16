@@ -1,31 +1,34 @@
 flowchart LR
-    subgraph Building Level
+    subgraph Building_Level[Building Level]
         A1(Edge Middleware) 
-        A2(Prediction Layer<br/>(Load & Gen Forecast,<br/>NILM, Elasticity))
-        A3(Decision Layer<br/>(DSS))
+        A2("Prediction Layer
+        (Load & Gen Forecast,
+        NILM, Elasticity)")
+        A3("Decision Layer
+        (DSS)")
         A4(Data & Security Layer)
         A1 --> A2
         A2 --> A3
         A3 --> A4
         A4 --> A2
     end
-
-    subgraph Neighborhood / District / City Level
+    subgraph Neighborhood_District_City[Neighborhood / District / City Level]
         B1(Middleware Layer)
-        B2(Prediction & Simulation Layer<br/>(Aggregated Load & Gen,<br/>Elasticity, D/R Strategy))
-        B3(Decision Layer<br/>(DSS))
+        B2("Prediction & Simulation Layer
+        (Aggregated Load & Gen,
+        Elasticity, D/R Strategy)")
+        B3("Decision Layer
+        (DSS)")
         B4(Data & Security Layer)
         B1 --> B2
         B2 --> B3
         B3 --> B4
     end
-
-    subgraph Operational Platform
+    subgraph Operational_Platform[Operational Platform]
         C1(Authentication Layer)
-        C2(Visualization Layer<br/>(Dashboards & Mobile App))
+        C2("Visualization Layer
+        (Dashboards & Mobile App)")
         C3(Data Storage Layer)
     end
-
-    %% Flows among subgraphs
-    Building Level --> Neighborhood / District / City Level
-    Neighborhood / District / City Level --> Operational Platform
+    Building_Level --> Neighborhood_District_City
+    Neighborhood_District_City --> Operational_Platform
