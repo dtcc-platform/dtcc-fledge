@@ -13,7 +13,7 @@ FLEdge follows a **hierarchical** approach to collect, manage, and utilize energ
 2. **Neighborhood / District / City Level (EMaN)**  
    - Receives aggregated data from multiple Building EMaNs.  
    - Performs higher-level coordination, such as area-level load forecasting, aggregated flexibility calculations, D/R management.  
-   - Sends updated or consolidated instructions back down to Building EMaNs (e.g., shifting loads, storing energy).  
+   - Sends updated or consolidated instructions back down to Building EMaNs (e.g., load shifting, energy storing).  
    - Publishes aggregated / consolidated insights to the Operational Platform.
 
 3. **Operational Platform**  
@@ -103,7 +103,7 @@ Below are key data entities that flow through the system:
      - Building Flexibility  
    - Intermediate results (e.g., predicted load, NILM results) are stored locally and forwarded to the DSS.
 
-3. **Local DSS → (Optional) Action or Control Signals**  
+3. **Local DSS → (Optional) Action or Control Directives**  
    - The DSS combines real-time data and predictions to propose or directly implement setpoints for HVAC, storage, or appliances.  
    - Action proposals/commands may be shared with the occupant (via the Operational Platform) for manual approval or override.
 
@@ -114,8 +114,8 @@ Below are key data entities that flow through the system:
 ### 3.2 Neighborhood / District / City Data Flow
 
 1. **Collect Aggregated Data from Multiple Buildings**  
-   - Each building publishes summarized metrics (energy consumption, predicted flexibility) to the Neighborhood or District EMaN.  
-   - EMaN nodes store and merge data from many buildings.
+   - Each building publishes summarized metrics (energy consumption, predicted flexibility) to the Neighborhood EMaN.  
+   - EMaN nodes store and merge data from multiple lower level nodes.
 
 2. **District-Level Analytics & DSS**  
    - The District EMaN runs forecasting or D/R strategy modules at scale (e.g., aggregated load, expected generation from multiple sites).  
@@ -151,7 +151,7 @@ Below are key data entities that flow through the system:
 ## 4. Data Persistence and Security Mechanisms
 
 1. **Local Data Persistence**  
-   - Edge devices store short-term, high-resolution data in embedded databases (often time-series oriented).  
+   - Edge devices store locally short-term, high-resolution data (often time-series oriented).  
    - Ensures local autonomy, real-time analytics, and resilience if connectivity to upper layers is temporarily down.
 
 2. **Central Data Storage**  
