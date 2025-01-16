@@ -1,5 +1,3 @@
-Below is the **Information View** content in Markdown format, **excluding** the code blocks for the diagrams. You can insert or reference your own diagrams wherever appropriate.
-
 ---
 
 # FLEdge Information View
